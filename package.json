@@ -1,0 +1,1 @@
+{"description":"Leonida Trophy Guide — a GTA 6 trophy guide and tracker (55 trophies)","engines":{"node":">=22"},"license":"MIT","name":"leonida-trophy-guide","private":true,"scripts":{"start":"node main.ts"},"type":"module","version":"1.0.0"}

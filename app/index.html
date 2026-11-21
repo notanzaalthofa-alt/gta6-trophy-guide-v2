@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA 6</title>
+<link rel="stylesheet" href="/app/style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="tagline">All 55 trophies &mdash; 1 Platinum, 2 Gold, 6 Silver, 46 Bronze. Track your hunt across Vice City and the whole state of Leonida.</p>
+    <div class="stats" id="stats"></div>
+    <div class="progress-wrap">
+      <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+      <p class="progress-text" id="progressText">0 / 55 earned &middot; 0%</p>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs">
+  <button class="tab active" data-view="checklist">Checklist</button>
+  <button class="tab" data-view="roadmap">Platinum Roadmap</button>
+  <button class="tab" data-view="completion">100% Checklist</button>
+</nav>
+
+<main>
+  <section id="view-checklist" class="view">
+    <div class="notice">
+      <strong>Heads up:</strong> one trophy is potentially missable &mdash; <strong>Positive Mental Attitude</strong>. Do Lucia&rsquo;s Chapter 1 balcony meditation before leaving Chapter 1. Cheats disable trophies. There is no mission replay, so keep manual saves at the start and end of each chapter.
+    </div>
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search trophies&hellip; (e.g. bank, fishing, story)" aria-label="Search trophies">
+      <select id="gradeFilter" aria-label="Filter by grade">
+        <option value="">All grades</option>
+        <option value="Platinum">Platinum</option>
+        <option value="Gold">Gold</option>
+        <option value="Silver">Silver</option>
+        <option value="Bronze">Bronze</option>
+      </select>
+      <select id="categoryFilter" aria-label="Filter by category">
+        <option value="">All categories</option>
+        <option value="Story">Story</option>
+        <option value="Activities">Activities</option>
+        <option value="Combat">Combat</option>
+        <option value="Robbery">Robbery</option>
+        <option value="Collectibles">Collectibles</option>
+        <option value="Exploration">Exploration</option>
+        <option value="Completion">Completion</option>
+        <option value="Misc">Misc</option>
+      </select>
+      <select id="statusFilter" aria-label="Filter by verification status">
+        <option value="">Confirmed + unconfirmed</option>
+        <option value="confirmed">Confirmed only</option>
+        <option value="unconfirmed">Unconfirmed only</option>
+      </select>
+      <label class="check"><input type="checkbox" id="hideEarned"> Hide earned</label>
+      <label class="check"><input type="checkbox" id="hideSpoilers" checked> Hide story spoilers</label>
+      <button id="resetBtn" type="button">Reset progress</button>
+    </div>
+    <p class="count" id="count"></p>
+    <ul class="trophy-list" id="trophyList"></ul>
+  </section>
+
+  <section id="view-roadmap" class="view hidden">
+    <h2>Platinum Roadmap</h2>
+    <div class="roadmap-grid" id="roadmapGrid"></div>
+    <h3>Key facts</h3>
+    <table class="facts">
+      <tr><th>Estimated difficulty</th><td>4 / 10</td></tr>
+      <tr><th>Estimated time</th><td>~200 hours</td></tr>
+      <tr><th>Total trophies</th><td>55 (1 Platinum, 2 Gold, 6 Silver, 46 Bronze)</td></tr>
+      <tr><th>Offline / online</th><td>All 55 offline &middot; 0 online</td></tr>
+      <tr><th>Playthroughs</th><td>1 (free roam continues after the story)</td></tr>
+      <tr><th>Missable</th><td>1 potentially missable: Positive Mental Attitude</td></tr>
+      <tr><th>Glitched</th><td>None currently confirmed</td></tr>
+      <tr><th>Cheats</th><td>Disable trophies and saving while active</td></tr>
+      <tr><th>Mission replay</th><td>No &mdash; keep 15 manual save slots in rotation</td></tr>
+      <tr><th>Hardest trophy</th><td>A Long Road &mdash; 100% completion</td></tr>
+    </table>
+  </section>
+
+  <section id="view-completion" class="view hidden">
+    <h2>100% Checklist &mdash; for &ldquo;A Long Road&rdquo;</h2>
+    <p>You don&rsquo;t have to collect everything &mdash; only the numbers in the in-game checklist (Progress &gt; Stats &gt; 100% Completion). Progress earned before finishing the story already counts.</p>
+    <h3>Robberies</h3>
+    <table class="facts">
+      <tr><th>Main story</th><td>Finish all chapters</td></tr>
+      <tr><th>Optional tasks</th><td>100 completed</td></tr>
+      <tr><th>Gang Operations</th><td>39 of 39</td></tr>
+      <tr><th>Bank Jobs</th><td>22 of 22</td></tr>
+      <tr><th>Payday Loan Jobs</th><td>7 of 7</td></tr>
+      <tr><th>Smash &rsquo;N&rsquo; Grabs</th><td>34 of 35</td></tr>
+      <tr><th>Stick Ups</th><td>50 of 91</td></tr>
+      <tr><th>Bank Vaults</th><td>8 of 8</td></tr>
+      <tr><th>Narcotics fenced</th><td>$100,000</td></tr>
+      <tr><th>Jewelry fenced</th><td>$100,000</td></tr>
+      <tr><th>Marked Bills fenced</th><td>$250,000</td></tr>
+      <tr><th>Vehicles fenced</th><td>$200,000</td></tr>
+    </table>
+    <h3>Collectibles &amp; exploration</h3>
+    <table class="facts">
+      <tr><th>Kenton&rsquo;s Treasure Sets</th><td>5 of 7</td></tr>
+      <tr><th>Collectible Card Sets</th><td>15 of 18</td></tr>
+      <tr><th>WAiNK locations</th><td>100 scans</td></tr>
+      <tr><th>Underwater discoveries</th><td>33 of 33</td></tr>
+      <tr><th>Magazines, books &amp; comics</th><td>30 of 34</td></tr>
+      <tr><th>Meditations</th><td>15 of 18 (all 18 for the separate trophy)</td></tr>
+      <tr><th>Cocaine Flamingos</th><td>100 of 125</td></tr>
+      <tr><th>Unique playlists</th><td>2 of 2</td></tr>
+      <tr><th>Discovered styles</th><td>70 of 79</td></tr>
+      <tr><th>Base-model vehicles</th><td>200 of 277</td></tr>
+      <tr><th>Standard issue weapons</th><td>50 of 66</td></tr>
+      <tr><th>Animals studied</th><td>100 of 255</td></tr>
+    </table>
+    <h3>Activities</h3>
+    <table class="facts">
+      <tr><th>Unique races won</th><td>30 of 40</td></tr>
+      <tr><th>Race Challenge Gold Medals</th><td>10 of 13</td></tr>
+      <tr><th>Shooting Range Gold Medals</th><td>42 of 42</td></tr>
+      <tr><th>Video games</th><td>Play all 4</td></tr>
+      <tr><th>Pool opponents</th><td>Defeat 5 of 7</td></tr>
+      <tr><th>Mini golf</th><td>Play at 2 of 3 locations</td></tr>
+      <tr><th>Basketball hoops</th><td>Score at 90 of 100</td></tr>
+      <tr><th>Drone Time Trials</th><td>42 of 42</td></tr>
+      <tr><th>Stunts</th><td>300 of 397</td></tr>
+      <tr><th>Challenges</th><td>70 of 80</td></tr>
+      <tr><th>Bret&rsquo;s Target Decks</th><td>15 of 15</td></tr>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Trophy Guide is an unofficial fan guide. Not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto and GTA are trademarks of Take-Two Interactive.</p>
+  <p>Trophy list compiled from public post-release guides (KeeNgamer, Push Square, Insider Gaming, games.gg, Mobalytics), checked 21 November 2026. Five trophies are marked <strong>unconfirmed</strong> because the guides themselves flag their unlock methods as still being confirmed &mdash; do not rely on unverified methods for those. Difficulty ratings are this guide&rsquo;s own estimates.</p>
+</footer>
+
+<script src="/app/trophies.js"></script>
+<script src="/app/app.js"></script>
+</body>
+</html>
